@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Find/Add Questions</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+    details {
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-radius: 0.25rem;
+	border: 1px solid black;
+}
+summary {
+	font-size: 1.25rem;
+	font-weight: bold;
+	cursor: pointer;
+	position: relative;
+	outline: none;
+	color: black;
+}
+body{
+  background-color: white;
+}
+    </style>
+</head>
+<body>
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <img src="images/logo.png" style="width: 50px;height: 100px; margin-right: 16px;">
+      <a id="logo-container" href="#" class="brand-logo" style="font-size: 20px;color:#008080 ">NIT KKR Discussion Forum</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html" style="color:#008080">Home</a></li>
+        <li><a href="feedback.html" style="color:#008080">Feedback</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+ <div class="col s12 m4">
+  <div class="icon-block">
+    <h2 id= "topic"></h2>
+    <h3 class="center" style="color:#008080">Question Display</h3>
+    <p style="margin-left:80px;margin-right:80px"id= "questionlist"></p>
+  <!--  <button id="submit" type="button" onclick="display()"></button>
+ <script src="save.js">-->
+
+  <!--    </script>
+  </div>
+</div>
+<div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+          </div>
+  </div>
+    <div class="col s12 m4">
+       </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="section">
+       <div class="row">
+        <div class="col s12 center">
+       </div>
+      </div>
+    </div>
+  </div>
+-->
+
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+        <h2 style="color:black">Have another Question?..Add Here</h2>
+          <textarea style="height:150px" id="question"></textarea>
+          
+            <br><br>
+            <button id="submit" onClick="save()" style="height: 48px; font-size: 25px; background-color: #008080
+; color: white; border-radius: 10%">Add Question</button>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">NIT Kurukshetra</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        </div>
+        <div class="col l3 s12">
+         <!--  <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul> -->
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <a class="white-text" href="https://nitkkr.ac.in/"><img src="Images/logo.png" style="height: 34px; border-radius: 20%"></a>
+            <a class="white-text" href="https://twitter.com/NITKURUKSHETRA"><img src="Images/Twitter.png"></a>
+            <a class="white-text" href="https://www.youtube.com/channel/UCeNBt-YR8d6xpfGtna8-RSg"><img src="Images/youtube.png"></a>
+            <a class="white-text" href="https://www.facebook.com/nit.kurukshetra.5"><img src="Images/facebook.png"></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <!-- Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
+      </div>
+    </div>
+  </footer>
+
+  <!--scripts-->
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyA9tEigd6uDpR-MVTjbyqui-7158TpxBkM",
+    authDomain: "final-37d52.firebaseapp.com",
+    projectId: "final-37d52",
+    storageBucket: "final-37d52.appspot.com",
+    messagingSenderId: "626476418504",
+    appId: "1:626476418504:web:382cb42aadc87991b3ecfd",
+    measurementId: "G-V3YZ3E8BGV"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/display.js"></script>
+ <script src="js/DisplayAll.js"></script>
+  </body>
+</html>

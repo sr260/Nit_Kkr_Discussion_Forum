@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>NIT Kurukshetra Discussion Forum</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <img src="images/logo.png" style="width: 50px;height: 50px; margin-right: 16px;">
+      <a id="logo-container" href="#" class="brand-logo" style="font-size: 20px;color:#008080 ">NIT KKR Discussion Forum</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html" style="color: #008080; font-weight: bold">Home</a></li>
+        <li><a href="feedback.html" style="color: #008080; font-weight: bold">Feedback</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center bold teal-text text-darken-3 ">Welcome to NIT Kurukshetra Discussion Forum</h1>
+        <div class="row center">
+          <h5 class="header col s12 bold">Post your doubts and discuss with peers, seniors and aluminus.</h5>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row ">
+        <div class="col s12 m4">
+          <div class="card medium horizontal">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">local_library</i></h2>
+              <h5 class="center topic1" >Workshops</h5>
+              <p class="light">Ongoing workshop is a 3 day event based on Web development. Technologies to be told includes HTML, CSS, Javascript. For further doubts, let's enter the workshop</p>
+              <div class="center-align turn">
+              <button onclick="fetchData(this)" id="1" class="waves-effect waves-light btn W">
+                <span style="padding-right: 30px; padding-left:30px">Turn in</span>
+                <div class="valign-wrapper right"><span style="padding-right: 3px"><i class="material-icons white-text">visibility</i></span><span class="white-text" id="view1">0</span></div>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4 ">
+          <div class="card medium horizontal">
+            <div class="icon-block">
+              <h2 class="center brown-text"><i class="material-icons">supervised_user_circle</i></h2>
+              <h5 class="center topic2">Startup Ideas</h5>
+              <p class="light">Let's collect together, interact and work on cummulative ideas. To search for people for your idea or to work with others on their idea, enter the discussion below</p>
+              <div class="center-align turn">
+              <button onclick="fetchData(this)" id="2" class="waves-effect waves-light btn teal lighten-1">
+                <span style="padding-right: 30px; padding-left:30px">Turn in</span>
+                <div class="valign-wrapper right"><span style="padding-right: 3px"><i class="material-icons white-text">visibility</i></span><span class="white-text" id="view2">0</span></div>
+              </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card medium horizontal">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">work</i></h2>
+            <h5 class="center topic3">Off Campus Drives</h5>
+            <p class="light">Lots of job opportunities are present in outside world which we are unaware of. To get awaken about offcampus placement opportunities, dive into the below discussion.</p>
+            <div class="center-align turn">
+              <button onclick="fetchData(this)" id="3" class="waves-effect waves-light btn teal lighten-1">
+                <span style="padding-right: 30px; padding-left:30px">Turn in</span>
+                <div class="valign-wrapper right"><span style="padding-right: 3px"><i class="material-icons white-text">visibility</i></span><span class="white-text" id="view3">0</span></div>
+              </button>
+              </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="card medium horizontal">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">analytics</i></h2>
+            <h5 class="center topic4">Oncampus Drives</h5>
+            <p class="light">When companies visit the campus, we are unaware of preparation strategies and search for people everywhere to get as much info as we can. Turn inside to discuss your doubts.</p>
+            <div class="center-align turn">
+              <button onclick="fetchData(this)" id="4" class="waves-effect waves-light btn teal lighten-1">
+                <span style="padding-right: 30px; padding-left:30px">Turn in</span>
+                <div class="valign-wrapper right"><span style="padding-right: 3px"><i class="material-icons white-text">visibility</i></span><span class="white-text" id="view4">0</span></div>
+              </button>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card medium horizontal">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">engineering</i></h2>
+            <h5 class="center topic5">Techspardha</h5>
+            <p class="light">Techspardha is the technical fest organised in the institute. We oraganise events, talks and compete together. To get info related to events and winning techniques, let's enter</p>
+            <div class="center-align turn">
+              <button onclick="fetchData(this)" id="5" class="waves-effect waves-light btn teal lighten-1">
+                <span style="padding-right: 30px; padding-left:30px">Turn in</span>
+                <div class="valign-wrapper right"><span style="padding-right: 3px"><i class="material-icons white-text">visibility</i></span><span class="white-text" id="view5">0</span></div>
+              </button>
+            </div>
+          </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="card medium horizontal">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">nightlife</i></h2>
+            <h5 class="center topic6">Confluence</h5>
+
+            <p class="light">Confluence is the cultural fest organised in the institute. We collect and celebrate together with zest and enthusiasm. Dive into various events and ask your doubts.</p>
+            <div class="center-align turn">
+              <button onclick="fetchData(this)" id="6" class="waves-effect waves-light btn teal lighten-1">
+                <span style="padding-right: 30px; padding-left:30px">Turn in</span>
+                <div class="valign-wrapper right"><span style="padding-right: 3px"><i class="material-icons white-text">visibility</i></span><span class="white-text" id="view6">0</span></div>
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+      </div>
+    </div>
+    <div class="parallax"><img src="images/background2.jpg" alt="background img 2"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">NIT Kurukshetra</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+        </div>
+        <div class="col l3 s12">
+         <!--  <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul> -->
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+           <a class="white-text" href="https://nitkkr.ac.in/"><img src="Images/logo.png" style="height: 34px; border-radius: 20%"></a>
+            <a class="white-text" href="https://twitter.com/NITKURUKSHETRA"><img src="Images/Twitter.png"></a>
+            <a class="white-text" href="https://www.youtube.com/channel/UCeNBt-YR8d6xpfGtna8-RSg"><img src="Images/youtube.png"></a>
+            <a class="white-text" href="https://www.facebook.com/nit.kurukshetra.5"><img src="Images/facebook.png"></a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      <!-- Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a> -->
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyB3qOkgEUiWjLmTCR8K_LEJJNlZ93Z9cTI",
+      authDomain: "nit-discussion-forum.firebaseapp.com",
+      projectId: "nit-discussion-forum",
+      storageBucket: "nit-discussion-forum.appspot.com",
+      messagingSenderId: "845224906421",
+      appId: "1:845224906421:web:f3e2620a1dd458eeb278fc"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  
+  <script src="js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
