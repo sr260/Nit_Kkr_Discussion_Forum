@@ -48,6 +48,7 @@ function Ready(){
 		Dislikes: 0
 	});
  	document.getElementById('answer').value="";
+	 window.location.href = window.location.href ;
 }
 
 //Searching and displaying answer using answerid
