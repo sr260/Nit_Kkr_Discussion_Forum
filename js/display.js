@@ -33,5 +33,6 @@ function save() {
 
   })
 document.getElementById('question').value="";
+        window.location.href = window.location.href ;
   //alert('Saved')
 }
